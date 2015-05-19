@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <time.h>
+#include <math.h>
+#define N  50000
+int array[N];
+
+
+void insert (void)
+{
+  int c, d, t;
+  for (c = 1 ; c <= N - 1; c++) {
+    d = c;
+    while ( d > 0 && array[d] < array[d-1]) {
+      t          = array[d];
+      array[d]   = array[d-1];
+      array[d-1] = t;
+
+      d--;
+    }
+  }
+}
+
+
+int main(int argc, char **argv)
+{
+srand(time(NULL));
+int i;
+for (i = 0; i < N; i++)
+array[i] = rand();
+insert();
+}
