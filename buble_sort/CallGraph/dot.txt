@@ -1,0 +1,9 @@
+digraph
+{
+graph [ranksep="0.25", fontname=Arial, nodesep="0.125"];
+node [label="\N", fontsize="9.00", fontname=Arial, style="filled,rounded", height=0, width=0, shape=box, fontcolor=white];
+edge [fontname=Arial];
+1 [label="b_sort \n100.00% \n(12.13s)\n1x",fontcolor="white", color="#a50026"];
+2 [label="main \n100.00% \n(12.13s)\n",fontcolor="white", color="#a50026"];
+2 -> 1 [color="#a50026", label="1x" ,arrowsize="0.50", fontsize="9.00", fontcolor="black", penwidth="2.00"];
+}
